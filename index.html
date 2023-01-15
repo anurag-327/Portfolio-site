@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./src/styles/output.css">
+    <script src="https://kit.fontawesome.com/38b951bfd3.js" crossorigin="anonymous"></script>
+</head>
+<body class="">
+    <nav class="bg-white z-50 top-0 fixed w-full px-20 py-3 flex shadow-lg  shadow-gray-200 justify-between  sm:flex-col">
+        <div class="">
+            <img class="w-9 h-9 inline sm:float-left" src="./src/Images/Smhandles/anurag.png" alt="logo">
+            <span class="inline font-extrabold sm:float-left text-3xl mt-1 font-poppins">Anurag</span>
+            <i class="fa-solid fa-bars mt-3 float-right hidden invisible sm:visible togglenavbar "></i>
+        </div>
+        <div class=" sm:w-full mt-1 sm:hidden navbarlist">
+            <ul class="flex sm:flex-col text-center gap-6 text-xl text-gray-800 font-bold ">
+                <li class="hover:text-blue-700 cursor-pointer hover:scale-110 transform transition duration-500">Home</li>
+                <li class="hover:text-blue-700 cursor-pointer hover:scale-110 transform transition duration-500">About</li>
+                <li class="hover:text-blue-700 cursor-pointer hover:scale-110 transform transition duration-500">Skills</li>
+                <li class="hover:text-blue-700 cursor-pointer hover:scale-110 transform transition duration-500">Education</li>
+                <li class="hover:text-blue-700 cursor-pointer hover:scale-110 transform transition duration-500">Contact</li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class=" bg-[url('../Images/bg-design.png')]  w-full h-[90vh] sm:h-auto p-10 flex sm:flex-col sm:bg-fixed sm:w-full">
+         <div class="w-[50%] flex gap-4 justify-center flex-col p-20 sm:w-[100%] sm:p-4 sm:mt-10 sm:text-center sm:m-auto">
+            <div class="hover:scale-105 transform transition duration-500 flex gap-2 flex-col sm:m-auto">
+                <h1 class="sm:text-3xl md:3xl text-5xl font-extrabold font-poppins">Hi There, <br>I'm Anurag</h1>
+                <h2 class="text-3xl sm:text-2xl">I am a web Developer</h2>
+            </div>
+            <div>
+                <button class="hover:scale-110 transform transition duration-500 px-5 py-2 shadow-lg active:shadow-2xl active:shadow-purple-900 shadow-blue-800 text-white bg-purple-900 rounded-3xl">About Me <i class="ml-2 hidden fa-solid fa-arrow-down hover:inline"></i></button>
+            </div>
+            <div class="sm:m-auto">
+                <ul class="flex gap-3">
+                    <li>
+                        <a href="#"><i class="bg-black p-2 text-2xl transform transition duration-300 hover:scale-125 text-purple-400   rounded-full fa-brands fa-linkedin"></i></a>                
+                    </li>
+                    <li>
+                        <a href="#"><i class=" transform transition duration-300 hover:scale-125 bg-black p-2 text-2xl text-purple-400  rounded-full  fa-brands fa-github"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class=" transform transition duration-300 hover:scale-125 bg-black p-2 text-2xl  text-purple-400 rounded-full  fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class=" transform transition duration-300 hover:scale-125 bg-black p-2 text-2xl text-purple-400  rounded-full  fa-brands fa-telegram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="transform transition duration-300 hover:scale-125 bg-black p-2 text-2xl  text-purple-400  rounded-full  fa-brands fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+         </div>
+         <div class="w-[50%] flex justify-center items-center sm:hidden  ">
+            <div class="w-[50%] h-[50%] flex justify-center">
+                <img class=" shadow-2xl hover:shadow-purple-800 hover:scale-105 transform transition duration-500   shadow-purple-400 w-56 h-56 rounded-full" src="./src/Images/hero.png" alt="hero">
+            </div>
+         </div>
+    </section>
+
+
+    <section class="flex  rounded-md text-white gap-2">
+       
+        <div class="skillsbtn w-1/2 p-3 flex justify-center bg-purple-600 hover:scale-105 transform transition duration-500 font-bold">
+                <button class="">Skills</button>
+        </div>
+        <div class="projectsbtn w-1/2 flex justify-center p-3 bg-purple-300 hover:scale-105 transform transition duration-500 font-bold">
+            <button>Projects</button>
+    </div>
+        <!-- <div class="w-1/3 p-3 flex justify-center bg-slate-100 font-bold">
+                <button>Education Details</button>
+        </div> -->
+    </section>
+
+    <section class="text-center skillscontainer  mt-4">
+        <span class="text-6xl font-bold text-center">Skills</span>
+        <div class="skills sm:w-[95%] mt-10 bg-violet-900 rounded-md w-[70%] flex flex-wrap m-auto gap-10 p-10 justify-evenly">
+
+        </div>
+    </section>
+ 
+    <section class="text-center projectscontainer hidden  mt-4">
+        <span class="text-6xl font-bold text-center">Projects</span>
+        <div class="projects text-left sm:w-[95%] mt-10 bg-violet-900 rounded-md w-[90%] m-auto flex flex-col flex-wrap  gap-10 p-3 justify-evenly">
+
+        </div>
+    </section>
+
+
+  
+    
+    <footer class="relative bg-blue-50 pt-8 pb-6 mt-6">
+   
+        <hr class="my-6 border-blue-300">
+        <div class="flex flex-wrap items-center md:justify-between justify-center">
+          <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+            <div class="text-sm text-blueGray-500 font-semibold py-1">
+              Copyright © <span id="get-current-year">2023</span>
+              <span> Made By Anurag Srivastav</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  
+    <script src="./src/scripts/index.js"></script>
+</body>
+</html>
