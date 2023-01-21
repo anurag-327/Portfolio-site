@@ -105,7 +105,7 @@ const projects=[
         name:"Netflix UI Clone",
         description:"clone of Netflix's UI",
         toolsused:"HTML, CSS, JS",
-        image:"./src/Images/projects/projectimages/project5.png",
+        image:"./src/Images/projects/projectimages/netflix.png",
         link:"https://github.com/anurag-327/Netflix-UI-clone"
     }
 ]
