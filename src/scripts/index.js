@@ -8,13 +8,19 @@ const skills=[
         "name": "NodeJS",
         "icon": "https://img.icons8.com/color/48/000000/nodejs.png"
     },
+    {
+        "name": "ReactJS",
+        "icon": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png"
+    },
    
     {
-        "name": "Firebase",
-        "icon": "https://img.icons8.com/color/48/000000/firebase.png"
+        "name": "MongoDB",
+        "icon": "https://img.icons8.com/color/48/000000/mongodb.png"
     },
- 
-   
+    {
+        "name": "C++",
+        "icon": "https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"
+    },
    
     {
         "name": "TailwindCSS",
@@ -36,22 +42,10 @@ const skills=[
     {
         "name": "JavaScript",
         "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"
-    },
+    },  
     {
-        "name": "Python",
-        "icon": "https://img.icons8.com/color/48/000000/python--v1.png"
-    },
-    {
-        "name": "C++",
-        "icon": "https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"
-    },
-    {
-        "name": "MongoDB",
-        "icon": "https://img.icons8.com/color/48/000000/mongodb.png"
-    },
-    {
-        "name": "jQuery",
-        "icon": "https://img.icons8.com/ios-filled/48/1169ae/jquery.png"
+        "name": "Pocketbase",
+        "icon": "https://img.icons8.com/color/48/000000/firebase.png"
     },
     {
         "name": "Git VCS",
@@ -61,20 +55,25 @@ const skills=[
         "name": "GitHub",
         "icon": "https://img.icons8.com/glyph-neue/48/ffffff/github.png"
     },
-    {
-        "name": "ReactJS",
-        "icon": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png"
-    }
+  
      
 ];
 
 const projects=[
     {
         id:1,
+        name:"Codemon",
+        description:"Codemon is a web project that helps user compile their code and use platform to solve DSA Problems. ",
+        toolsused:"HTML, CSS, JS, EJS, Express js, MongoDB",
+        image:"./src/Images/projects/projectimages/codemon.png",
+        link:"https://github.com/anurag-327/Codemon"
+    },
+    {
+        id:2,
         name:"Car Rental System",
         description:"Car Rental System is a Web Project that helps user to rent out cars for short period. ",
         toolsused:"HTML, CSS, JS, EJS, Express js, MongoDB",
-        image:"./src/Images/projects/projectimages/project1.png",
+        image:"./src/Images/projects/projectimages/carrental.png",
         link:"https://github.com/anurag-327/Car-Rental-System"
     },
     {
@@ -82,23 +81,23 @@ const projects=[
         name:"Google Keep Notes",
         description:"This project is a clone of Google keep notes that gives user flexibility of adding, deleting, updating and restoring deleted notes.",
         toolsused:"HTML, CSS, JS, EJS, Express js, MongoDB",
-        image:"./src/Images/projects/projectimages/project2.png",
+        image:"./src/Images/projects/projectimages/notes.png",
         link:"https://github.com/anurag-327/Google-Keep-Notes"
     },
     {
-        id:3,
+        id:4,
         name:"My Portfolio site",
         description:"My Portfolio website containing details of my Skils, Projects and Educational Details",
         toolsused:"HTML, CSS, JS",
-        image:"./src/Images/projects/projectimages/project3.png",
-        link:"https://github.com/anurag-327/Netflix-UI-clone"
+        image:"./src/Images/projects/projectimages/portfolio.png",
+        link:"https://github.com/anurag-327/Portfolio-site"
     },
     {
-        id:4,
+        id:5,
         name:"Weather App",
         description:"Minimal Weather App",
         toolsused:"HTML, CSS, JS, Express Js",
-        image:"./src/Images/projects/projectimages/project4.png",
+        image:"./src/Images/projects/projectimages/weather.png",
         link:"https://github.com/anurag-327/Weather-App"
     },
     {
@@ -117,9 +116,11 @@ const togglenav=document.querySelector(".togglenavbar");
 const navbarlist=document.querySelector(".navbarlist");
 const projectsbtn=document.querySelector(".projectsbtn")
 const skillsbtn=document.querySelector(".skillsbtn")
+const resumebtn=document.querySelector(".resumebtn")
 
 const projectscontainer=document.querySelector(".projectscontainer");
 const skillscontainer=document.querySelector(".skillscontainer");
+const resumecontainer=document.querySelector(".resumecontainer");
 
 togglenav.addEventListener("click",()=>
 {
@@ -181,7 +182,7 @@ function displayprojects()
     for (var i = 0; i < projects.length; i++) {
         const node = document.createElement("div");
         let htmldata = `
-        <div class="bg-[url('../Images/projects/projectbg/4.png')] rounded-lg hover:scale-105 transform transition duration-500 bg-fixed w-[90%] m-auto h-auto sm:w-[90%] sm:p-2 p-10">
+        <div class="bg-[url('../Images/projects/projectbg/9.png')] rounded-lg hover:scale-105 transform transition duration-500 bg-fixed w-[90%] m-auto h-auto sm:w-[90%] sm:p-2 p-10">
         <div class="flex sm:flex-col gap-2 ">
             <div class="w-[70%] sm:m-auto sm:w-[100%] sm:p-2 mt-10">
             
