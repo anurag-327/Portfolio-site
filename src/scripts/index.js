@@ -12,10 +12,17 @@ const skills=[
         "name": "ReactJS",
         "icon": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png"
     },
-   
     {
         "name": "MongoDB",
         "icon": "https://img.icons8.com/color/48/000000/mongodb.png"
+    },
+    {
+        "name": "SocketIo",
+        "icon": ""
+    },
+    {
+        "name": "Postman",
+        "icon": ""
     },
     {
         "name": "C++",
@@ -62,6 +69,30 @@ const skills=[
 const projects=[
     {
         id:1,
+        name:"Password Manager",
+        description:"Password Manager lets user save their passwords securely. ",
+        toolsused:"React, Express js, Node Js, MongoDB",
+        image:"./src/Images/projects/projectimages/passwordmanager.png",
+        link:"https://github.com/anurag-327/PasswordManager"
+    },
+    {
+        id:2,
+        name:"CHAT APP",
+        description:"Real time One to One Chat app.",
+        toolsused:"React, Express js, Node Js, MongoDB",
+        image:"./src/Images/projects/projectimages/chatapp.png",
+        link:"https://github.com/anurag-327/Chat-App"
+    },
+    {
+        id:3,
+        name:"E-Commerce Website",
+        description:"E-Commmerce Website built On React.",
+        toolsused:"React, Express js, Node Js, MongoDB",
+        image:"./src/Images/projects/projectimages/ecommerce.png",
+        link:"https://github.com/anurag-327/E-Commerce"
+    },
+    {
+        id:4,
         name:"Codemon",
         description:"Codemon is a web project that helps user compile their code and use platform to solve DSA Problems. ",
         toolsused:"HTML, CSS, JS, EJS, Express js, MongoDB",
@@ -69,7 +100,7 @@ const projects=[
         link:"https://github.com/anurag-327/Codemon"
     },
     {
-        id:2,
+        id:5,
         name:"Car Rental System",
         description:"Car Rental System is a Web Project that helps user to rent out cars for short period. ",
         toolsused:"HTML, CSS, JS, EJS, Express js, MongoDB",
@@ -77,7 +108,7 @@ const projects=[
         link:"https://github.com/anurag-327/Car-Rental-System"
     },
     {
-        id:2,
+        id:6,
         name:"Google Keep Notes",
         description:"This project is a clone of Google keep notes that gives user flexibility of adding, deleting, updating and restoring deleted notes.",
         toolsused:"HTML, CSS, JS, EJS, Express js, MongoDB",
@@ -85,7 +116,7 @@ const projects=[
         link:"https://github.com/anurag-327/Google-Keep-Notes"
     },
     {
-        id:4,
+        id:7,
         name:"My Portfolio site",
         description:"My Portfolio website containing details of my Skils, Projects and Educational Details",
         toolsused:"HTML, CSS, JS",
@@ -93,15 +124,7 @@ const projects=[
         link:"https://github.com/anurag-327/Portfolio-site"
     },
     {
-        id:5,
-        name:"Weather App",
-        description:"Minimal Weather App",
-        toolsused:"HTML, CSS, JS, Express Js",
-        image:"./src/Images/projects/projectimages/weather.png",
-        link:"https://github.com/anurag-327/Weather-App"
-    },
-    {
-        id:5,
+        id:9,
         name:"Netflix UI Clone",
         description:"clone of Netflix's UI",
         toolsused:"HTML, CSS, JS",
@@ -160,7 +183,7 @@ function displayskills()
         let htmldata = `
         <div class="p-3 sm:p-1 rounded-md bg-black text-white hover:scale-110 transform transition duration-500 shadow-gray-900 shadow-md flex flex-col gap-4" >
         <div class="   m-auto  ">
-          <img src="${skills[i].icon}" alt="${skills[i].name}>
+          <img src="${skills[i].icon}" alt="${skills[i].name}">
         </div>
         <div class="" >
         
@@ -186,8 +209,8 @@ function displayprojects()
         <div class="flex sm:flex-col gap-2 ">
             <div class="w-[70%] sm:m-auto sm:w-[100%] sm:p-2 mt-10">
             
-                <span class="text-2xl font-bold">${projects[i].name}</span>
-                <p class="font-poppins text-sm">${projects[i].description} </p>
+                <span class="text-2xl text-black font-bold">${projects[i].name}</span>
+                <p class="font-poppins text-black text-sm">${projects[i].description} </p>
                     <div>
                         <span class="block text-blue-700 font-bold ">Tools Used: ${projects[i].toolsused}</span>
                     </div>
