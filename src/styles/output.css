@@ -1809,6 +1809,22 @@ video {
     height: 70vh;
   }
 
+  .sm\:h-\[55vh\]{
+    height: 55vh;
+  }
+
+  .sm\:h-\[65vh\]{
+    height: 65vh;
+  }
+
+  .sm\:h-\[vh\]{
+    height: vh;
+  }
+
+  .sm\:h-\[50vh\]{
+    height: 50vh;
+  }
+
   .sm\:w-7{
     width: 1.75rem;
   }
