@@ -1255,6 +1255,12 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-gray-400{
+  --tw-gradient-from: #9ca3af;
+  --tw-gradient-to: rgb(156 163 175 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .to-purple-900{
   --tw-gradient-to: #581c87;
 }
@@ -1883,6 +1889,16 @@ video {
 
   .sm\:gap-1{
     gap: 0.25rem;
+  }
+
+  .sm\:bg-gray-300{
+    --tw-bg-opacity: 1;
+    background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+  }
+
+  .sm\:bg-gray-400{
+    --tw-bg-opacity: 1;
+    background-color: rgb(156 163 175 / var(--tw-bg-opacity));
   }
 
   .sm\:bg-fixed{
